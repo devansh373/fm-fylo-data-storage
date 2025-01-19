@@ -17,6 +17,7 @@ body{
     background-size: contain;
     background-color: hsl(229, 57%, 11%);
     color: white;
+    padding: 10px;
 }
 .wrapper{
     width: 800px;
@@ -150,4 +151,38 @@ p span{
     justify-content: space-between;
     font-size: 11px;
     font-weight: 600;
+}
+@media (max-width:1000px){
+    body{
+        background-image: url(./images/bg-mobile.png);
+        background-position: left 34vw top 0;
+    }
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        width: 360px;
+        padding: 10px;
+    }
+    .wrapper>div{
+        width: 85%;
+    }
+    .left{
+        height: 200px;
+    }
+    .right{
+        height: 150px;
+    }
+    .left{
+        padding-left: 0;
+    }
+    .info{
+        top: 80%;
+        left: 20%;
+    }
+    .info::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border: none;
+    }
 }
